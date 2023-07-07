@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #EF6D58;
+    --blue: #28293E;
+    --heading: #391400;
+    --background: #FDF0E9;
+    --para: rgba(57, 20, 0, 0.64);
+    --white: #fff;
+    --border: #F3D1BF;
+    --menu-btn-border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background: var(--background);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    color: var(--heading);
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    color: var(--heading);
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--heading);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--para);
+    margin: 0;
+}
+
+.c-p-right {
+    padding-right: 100px;
+}
+
+.c-p-left {
+    padding-left: 100px;
+}
+
+.work-heading {
+    font-size: 72px;
+}
+
+.btn-custom {
+    background: var(--primary);
+    color: var(--white);
+    padding: 16px 22px;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn-white {
+    background: #fff;
+    color: var(--heading);
+    box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+    border-radius: 6px;
+}
+
+.link-custom {
+    color: var(--white);
+}
+
+.custom-bg {
+    background: var(--blue);
+}
+
+.border,
+.border-start,
+.border-end,
+.border-bottom {
+    border-color: var(--primary) !important;
+}
+
+.site-url {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--heading);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.tag-line {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--heading);
+}
+
+.text-dark {
+    color: var(--heading) !important;
+}
+
+/* menu style start */
+.menu {
+    background: var(--blue);
+    padding: 10px 0;
+}
+
+.menu a {
+    color: var(--white);
+}
+
+.menu .menu_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .main-menu {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.menu .buttons .menu-btn {
+    padding: 16px 36px;
+    font-size: 14px;
+    border: var(--menu-btn-border);
+    border-radius: 6px;
+}
+
+/* menu style end */
+
+/* hero section start */
+.hero {
+    background: var(--blue);
+    padding: 60px;
+}
+
+.hero .heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: var(--white);
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.hero .autor {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.hero .message {
+    margin-top: 100px;
+}
+
+/* hero section end */
+
+/* client section start */
+.client {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .client {
+        flex-wrap: wrap;
+        gap: 30px 60px;
+        justify-content: center;
+    }
+}
+
+/* client section end */
+
+/* features section start */
+.feature .items i {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.feature .card {
+    border-end-end-radius: 0px !important;
+}
+
+.feature .card-2 {
+    background: var(--background);
+    border-left: none !important;
+}
+
+/* features section end */
+
+/* service section start */
+
+.quote-section .quote {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* service section end */
+
+/* portfolio section start */
+.controls .nav li a {
+    color: var(--white);
+    position: relative;
+}
+
+.controls .nav li a span {
+    position: absolute;
+    font-size: 14px;
+    top: -10px;
+    right: -12px;
+}
+
+.portfolio .project .image {
+    position: absolute;
+}
+
+.portfolio .project .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    opacity: 0.318057119846344;
+    background: #5C2000;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.portfolio .project .text{
+    z-index: 1;
+}
+
+/* portfolio section end */
